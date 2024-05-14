@@ -59,7 +59,10 @@ const Show = () => {
             );
         });
     }
-    return <ul className="list-none w-[35%] ">{tasksrender}</ul>;
+    return <ul className="list-none w-full sm:w-[80%] md:w-[60%] lg:w-[50%]">
+    {tasksrender}
+</ul>
+;
 };
 
 export default Show;

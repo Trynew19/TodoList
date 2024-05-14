@@ -13,21 +13,19 @@ const Create = () => {
     };
 
     return (
-        <form
-            onSubmit={TaskSubmitHandler}
-            className="w-[35%] flex justify-between px-5 my-[2%]"
-        >
-            <input
-                onChange={(e) => settitle(e.target.value)}
-                value={title}
-                placeholder="write your next task..."
-                className="px-5 py-2 text-yellow-100 outline-none w-[80%] rounded-xl bg-zinc-700 "
-                type="text"
-            />
-            <button className="outline-none text-4xl font-extrabold flex justify-center items-center w-[5vmax] h-[5vmax] rounded-full bg-orange-600">
-                <i className="ri-add-fill"></i>
-            </button>
-        </form>
+        <form onSubmit={TaskSubmitHandler} className="w-full sm:w-[80%] md:w-[60%] lg:w-[50%] flex justify-between px-5 my-4">
+    <input
+        onChange={(e) => settitle(e.target.value)}
+        value={title}
+        placeholder="write your next task..."
+        className="px-5 py-2 text-yellow-100 outline-none w-full sm:w-[80%] bg-zinc-700 rounded-xl"
+        type="text"
+    />
+    <button className="outline-none text-4xl font-extrabold flex justify-center items-center w-[50px] h-[50px] sm:w-[10vmax] sm:h-[10vmax] rounded-full bg-orange-600">
+        <i className="ri-add-fill"></i>
+    </button>
+</form>
+
     );
 };
 

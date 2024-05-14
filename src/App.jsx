@@ -4,11 +4,12 @@ import Show from "./components/Show";
 
 const App = () => {
     return (
-        <div className="overflow-x-hidden border-t-2 w-screen min-h-[100vh] bg-zinc-800 flex  items-center flex-col">
-            <Header />
-            <Create />
-            <Show />
-        </div>
+        <div className="overflow-x-hidden border-t-2 w-full min-h-[100vh] bg-zinc-800 flex items-center flex-col">
+    <Header />
+    <Create />
+    <Show />
+</div>
+
     );
 };
 
